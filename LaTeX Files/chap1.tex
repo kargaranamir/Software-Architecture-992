@@ -54,13 +54,61 @@ Timestamp
 عقل سنجی\LRTfootnote{Sanity Checking}
 \item
 نظارت بر شرایط\LTRfootnote{Condition Monitoring}
+\item
+رای دادن \LTRfootnote{Voting}
+\item
+شناسایی استثنا\LTRfootnote{Exception Detection}
+\item
+خودآزمونی \LTRfootnote{self-test}
 \end{itemize}
 \subsection{بازیابی از خطا}
-
+تاکتیک های بازیابی از خطاها در قالب روش‌های آماده سازی و ترمیم و تکنیک‌های بازآفرینی سیستم پیاده سازی می شوند.روش های بازآفرینی دغدغه ی راه اندازی مجدد یک سیستم شکست خورده را دارند.روش های ترمیم شامل موارد زیر هستند.
+\begin{itemize}
+\item
+افزونگی فعال \LRTfootnote{Active redundancy}
+\item
+افزونگی منفعل \LRTfootnote{Passive redundancy}
+\item
+پشتیبان \LTRfootnote{Spare}
+\item
+کنترل استثنا \LTRfootnote{Exception handling}
+\item
+بازگشت به عقب \LTRfootnote{Rollback}
+\item
+به روز‌رسانی نرم‌افزار \LTRfootnote{Software Upgrade}
+\item
+امتحان مجدد \LTRfootnote{Try}
+\item
+نادیده گرفتن رفتار دارای خطا
+\item
+تخریب \LTRfootnote{The degradation}
+\item
+پیکربندی \LTRfootnote{Reconfiguration}
+\end{itemize}
+و روش های بازآفرینی سیستمی که پس از شکست از اصلاح شده است، شامل موارد زیر است:
+\begin{itemize}
+\item
+سایه \LTRfootnote{The Shadow}
+\item
+هماهنگ سازی مجدد \LTRfootnote{State resynchronization}
+\item
+راه اندازی مجدد افزایشی \LTRfootnote{Escalating restart}
+\end{itemize}
 \subsection{جلوگیری از خطا}
-
+به جای شناسایی خطاها و سپس تلاش برای بازیابی آنها، در این تاکتیک سیستم سعی می کند تا از خطا جلوگیری کند.هر چند انجام چنین کاری در نگاه اول دشوار بنظر می رسد اما در بسیاری از موارد انجام چنین کاری ممکن است.
+\begin{itemize}
+\item 
+حذف از سرویس \LTRfootnote{Removal from service}
+\item
+تراکنش ها \LTRfootnote{Transactions}
+\item
+مدل پیش‌بینی \LTRfootnote{Predictive Model}
+\item
+پیشگیری از استثنا \LTRfootnote{Exception prevention}
+\item
+افزایش مجموعه‌ی صلاحیت‌ها \LTRfootnote{Increase competence set}
+\end{itemize}
 \section{طراحی فهرست بازبینی برای دسترسی‌پذیری}
-
 
 
 
