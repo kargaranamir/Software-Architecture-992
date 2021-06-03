@@ -93,14 +93,8 @@
 
 از سایر محصولات مشابه با \lr{Peloton} می‌توان به \lr{Google Borg}\cite{verma2015large} ،\lr{kubernetes}\cite{kubernetes} ، \lr{Hadoop YARN}\cite{hadoop} و \lr{Apache Mesos/Aurora}\cite{aurora}\cite{mesos} اشاره کرد.
 
+\section{منابع ذخیره‌سازی داده در \lr{Uber}}
+پیش از سال ۲۰۱۶ شرکت \lr{Uber} از پایگاه داده \lr{Postgres} استفاده می‌کرد \cite{migration_postgres}، اما امروز با استفاده از روشی بدون طرح\LTRfootnote{Schemaless}\cite{schemaless}  با ترکیب تکنولوژی‌هایی نظیر \lr{Riak}\cite{riak} و \lr{cassandra}\cite{cassandra} به همراه \lr{MySql}   داده‌هایی که برای طولانی مدت نیاز به نگهداری دارند، را ذخیره سازی می‌کند.در طول زمان \lr{Postgres} و \lr{Mysql} جای خود را به موتور‌‌های \lr{Nosql} دادند و همچنین به جهت دست‌یابی هر چه بهتر به ویژگی کیفی کارایی در بسیاری از کاربرد ها با افزایش حجم داده‌ها \lr{Riak} جایگاه خود را به \lr{cassandra} می‌دهد.همچنین \lr{Uber} از \lr{Redis}\cite{redis}  هم برای ذخیره سازی داده در حافظه‌های سریع و هم برای صف بندی استفاده می کند و با استفاده از \cite{Twemproxy}\lr{Twemproxy} مقیاس پذیری لایه حافظه پنهان را بدون از بین بردن نسبت برخورد\LTRfootnote{Hit Ratio} حافظه نهان از طریق الگوریتم هش کردن سازگار فراهم می کند.
 
-
-
-
-
-
-
-
-
-
+برای ذخیره سازی توزیع شده و تجزیه و تحلیل داده های پیچیده ،از انبار داده \lr{Hadoop}\cite{hadoop} به جهت ذخیره بهینه داده ها استفاده می‌شود.
 
